@@ -1,1 +1,25 @@
+repeat task.wait() until game:IsLoaded()
 
+local placeid = game.PlaceId
+
+local mapsup = {
+    [72064813230771] = [[
+_G.Hub = "DnnHub"
+_G.file = "rock.lua"
+loadstring(game:HttpGet("https://dnnhub.serveousercontent.com/raw/d/loaderf", true))()
+]],
+
+    [95295765150201] = [[
+_G.Hub = "DnnHub"
+_G.file = "rock.lua"
+loadstring(game:HttpGet("https://dnnhub.serveousercontent.com/raw/d/loaderf", true))()
+]]
+}
+
+local check = mapsup[placeid]
+
+if check then
+    loadstring(check)()
+else
+    game.Players.LocalPlayer:Kick("map not supported")
+end
