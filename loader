@@ -6,13 +6,13 @@ local mapsup = {
     [72064813230771] = [[
 _G.Hub = "DnnHub"
 _G.file = "rock.lua"
-loadstring(game:HttpGet("https://dnnhub.serveousercontent.com/raw/d/loaderf", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DinhubPom/Project/refs/heads/main/Loader/lua"))()
 ]],
 
     [95295765150201] = [[
 _G.Hub = "DnnHub"
 _G.file = "rock.lua"
-loadstring(game:HttpGet("https://dnnhub.serveousercontent.com/raw/d/loaderf", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DinhubPom/Project/refs/heads/main/Loader/lua"))()
 ]]
 }
 
